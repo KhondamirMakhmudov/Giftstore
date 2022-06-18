@@ -1,0 +1,415 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+}
+
+.container {
+  overflow: hidden;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 39px 0;
+}
+
+header img {
+  margin-right: 100px;
+}
+header ul {
+  display: flex;
+  list-style: none;
+  margin: 0 230px;
+}
+header ul li {
+  margin-right: 31px;
+}
+header ul li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+header ul li a::after {
+  content: "";
+  display: block;
+  width: 0%;
+  margin: auto;
+  height: 2px;
+  background-color: #F7941E;
+  transition: 0.6s;
+}
+header ul li a:hover::after {
+  width: 100%;
+}
+header .giftButton {
+  text-decoration: none;
+  color: #F7941E;
+  border: 1px solid #F7941E;
+  border-radius: 5px;
+  padding: 8px 20px;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+header .giftButton:hover {
+  background-color: #F7941E;
+  color: #fff;
+}
+
+.home,
+.learnMore {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home img {
+  width: 670px;
+  height: 600px;
+}
+.home .findGift {
+  width: 50%;
+  transform: translateX(20%);
+}
+.home .findGift p:nth-child(1) {
+  font-weight: bold;
+  font-size: 56px;
+  line-height: 69px;
+}
+.home .findGift p:nth-child(2) {
+  font-size: 20px;
+  line-height: 140.62%;
+  margin: 45px 0;
+}
+.home .findGift a {
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: #F7941E;
+  color: #fff;
+  transition: 0.5s;
+}
+.home .findGift a:hover,
+.home .findGift div:focus {
+  color: #F7941E;
+  background: #fff;
+  border: 1px solid #F7941E;
+  transform: scale(1.1);
+}
+
+.learnMore img {
+  width: 670px;
+  height: 600px;
+}
+.learnMore div {
+  width: 50%;
+  transform: translateX(30%);
+}
+.learnMore div p:nth-child(1) {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 140.62%;
+}
+.learnMore div p:nth-child(2) {
+  font-size: 20px;
+  line-height: 140.62%;
+  margin: 45px 0;
+}
+.learnMore div a {
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: #F7941E;
+  border: 1px solid #F7941E;
+  color: #fff;
+  transition: 0.5s;
+}
+.learnMore div a:hover {
+  background: #fff;
+  color: #F7941E;
+  transform: scale(1.1);
+}
+
+.occasion {
+  margin-top: 6em;
+}
+.occasion .title {
+  text-align: center;
+  font-size: 32px;
+  line-height: 38px;
+  margin-bottom: 23px;
+}
+.occasion .disc {
+  text-align: center;
+  font-size: 18px;
+  line-height: 135.94%;
+  margin-bottom: 4em;
+}
+.occasion .holiday_gifts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5em;
+  margin-bottom: 113px;
+  flex-wrap: nowrap;
+}
+.occasion .holiday_gifts .birthday,
+.occasion .holiday_gifts .anniversary,
+.occasion .holiday_gifts .valentine,
+.occasion .holiday_gifts .christmas {
+  transition: 1s;
+  padding-bottom: 24px;
+}
+.occasion .holiday_gifts .birthday img,
+.occasion .holiday_gifts .anniversary img,
+.occasion .holiday_gifts .valentine img,
+.occasion .holiday_gifts .christmas img {
+  margin-bottom: 1.5em;
+}
+.occasion .holiday_gifts .birthday p,
+.occasion .holiday_gifts .anniversary p,
+.occasion .holiday_gifts .valentine p,
+.occasion .holiday_gifts .christmas p {
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 74px;
+  margin-left: 24px;
+}
+.occasion .holiday_gifts .birthday a,
+.occasion .holiday_gifts .anniversary a,
+.occasion .holiday_gifts .valentine a,
+.occasion .holiday_gifts .christmas a {
+  text-decoration: none;
+  color: #000;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  opacity: 0.3;
+  transition: 1s;
+  margin-left: 24px;
+  margin-bottom: 24px;
+}
+.occasion .holiday_gifts .birthday a:hover,
+.occasion .holiday_gifts .birthday a:focus,
+.occasion .holiday_gifts .anniversary a:hover,
+.occasion .holiday_gifts .anniversary a:focus,
+.occasion .holiday_gifts .valentine a:hover,
+.occasion .holiday_gifts .valentine a:focus,
+.occasion .holiday_gifts .christmas a:hover,
+.occasion .holiday_gifts .christmas a:focus {
+  opacity: 1;
+  transform: translateX(-20%);
+}
+.occasion .holiday_gifts .birthday:hover,
+.occasion .holiday_gifts .anniversary:hover,
+.occasion .holiday_gifts .valentine:hover,
+.occasion .holiday_gifts .christmas:hover {
+  border: 1px solid #909690;
+  transform: scale(1.1);
+  box-shadow: 2px 3px 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+.contact {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #F7941E;
+  padding: 40px 0;
+  margin-bottom: 88px;
+}
+.contact .context p:nth-child(1) {
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 140.62%;
+}
+.contact .context p:nth-child(2) {
+  font-size: 32px;
+  line-height: 140.62%;
+}
+.contact .links a:nth-child(1) {
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 22px;
+  background: #000;
+  color: #fff;
+  padding: 15px 25px;
+  margin-right: 1em;
+  text-transform: uppercase;
+  border-radius: 5px;
+  border: 1px solid #000;
+  transition: 1s;
+}
+.contact .links a:nth-child(2) {
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 22px;
+  background: transparent;
+  color: #000;
+  padding: 15px 25px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  border: 1px solid #000;
+  transition: 1s;
+}
+.contact .links a:nth-child(1):hover {
+  background: transparent;
+  color: #000;
+}
+.contact .links a:nth-child(2):hover {
+  background: #000;
+  color: #fff;
+}
+
+.blogs {
+  margin-bottom: 40px;
+}
+.blogs .title {
+  text-align: center;
+  font-size: 32px;
+  line-height: 38px;
+  margin-bottom: 23px;
+}
+.blogs .disc {
+  text-align: center;
+  font-size: 18px;
+  line-height: 135.94%;
+  margin-bottom: 4em;
+}
+.blogs .readMore {
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5em;
+  color: #fff;
+  padding: 0 135px;
+}
+.blogs .readMore .readmore {
+  width: 50%;
+}
+.blogs .readMore .readmore p:nth-child(1) {
+  font-size: 14px;
+  line-height: 140.62%;
+}
+.blogs .readMore .readmore p:nth-child(2) {
+  margin-top: 27px;
+  margin-bottom: 60px;
+  font-size: 48px;
+  line-height: 58px;
+}
+.blogs .readMore .readmore a {
+  text-decoration: none;
+  color: #fff;
+  transition: 0.5s;
+}
+.blogs .readMore .readmore a:hover {
+  border: 1px solid #fff;
+  padding: 10px 20px;
+}
+
+.text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6em;
+  margin-bottom: 245px;
+}
+.text__first {
+  padding: 1em 2em;
+  transition: 0.5s;
+}
+.text__first p:nth-child(1) {
+  font-size: 24px;
+  line-height: 140.62%;
+  font-weight: bold;
+}
+.text__first p:nth-child(2) {
+  font-size: 18px;
+  line-height: 140.62%;
+  margin: 1em 0;
+}
+.text__first a {
+  text-decoration: none;
+  color: #000;
+  font-size: 14px;
+  line-height: 140.62%;
+}
+.text__first a:hover {
+  transform: translateX(-10%) scale(1.1);
+}
+.text__second {
+  padding: 1em 2em;
+  transition: 0.5s;
+}
+.text__second p:nth-child(1) {
+  font-size: 24px;
+  line-height: 140.62%;
+  font-weight: bold;
+}
+.text__second p:nth-child(2) {
+  font-size: 18px;
+  line-height: 140.62%;
+  margin: 1em 0;
+}
+.text__second a {
+  text-decoration: none;
+  color: #000;
+  font-size: 14px;
+  line-height: 140.62%;
+}
+.text__first:hover, .text__second:hover {
+  box-shadow: 6px 8px 8px 8px rgba(0, 0, 0, 0.3);
+}
+
+.nav-bar {
+  padding-bottom: 43px;
+  margin-bottom: 56px;
+}
+.nav-bar ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 5em;
+}
+.nav-bar li a {
+  text-decoration: none;
+  color: #000;
+}
+.nav-bar li:nth-child(3) {
+  margin: 0 60px;
+}
+
+.nav-bar::after {
+  content: "";
+  position: absolute;
+  width: 1000px;
+  height: 2px;
+  background: #000;
+  margin: 54px 0px;
+  margin-left: 170px;
+}
+
+.social_media {
+  margin-bottom: 72px;
+}
+.social_media ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1.5em;
+}
+.social_media ul li {
+  transition: 0.5s;
+}
+.social_media ul li:hover {
+  transform: scale(1.1) rotate(360deg);
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  font-size: 14px;
+  line-height: 140.62%;
+  margin-bottom: 35px;
+}
